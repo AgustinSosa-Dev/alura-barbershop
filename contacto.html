@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Barbería Alura</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="imagenes/logo.png" alt="Logo de la Barbería Alura" /></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form class="formulario-contacto">
+        <div>
+          <label for="nombreapellido">Nombre y Apellido</label>
+          <input
+            type="text"
+            id="nombreapellido"
+            class="input-padron"
+            required
+            placeholder="Completa este campo con tu nombre completo"
+          />
+
+          <label for="correoelectronico">Correo Electrónico</label>
+          <input
+            type="email"
+            id="correoelectronico"
+            class="input-padron"
+            required
+            placeholder="email@dominio.com"
+          />
+
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            id="telefono"
+            class="input-padron"
+            required
+            placeholder="(011) XXXX - XXXX"
+          />
+
+          <label for="mensaje">Asunto</label>
+          <textarea
+            id=""
+            cols="70"
+            rows="10"
+            id="mensaje"
+            class="input-padron"
+            optional=""
+          ></textarea>
+        </div>
+
+        <fieldset>
+          <legend class="legend-opciones">
+            ¿Por cuál de los siguientes medios, le gustaría ser contactado?
+          </legend>
+
+          <label for="radio-email" class="label">Email</label>
+          <input type="radio" name="contacto" value="email" id="radio-email" />
+
+          <label for="radio-telefono" class="label">Teléfono</label>
+          <input
+            type="radio"
+            name="contacto"
+            value="telefono"
+            id="radio-telefono"
+          />
+
+          <label for="radio-whatsapp" class="label">WhatsApp</label>
+          <input
+            type="radio"
+            name="contacto"
+            value="whatsapp"
+            id="radio-whatsapp"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend class="legend-opciones">
+            ¿En qué momento del día, le gustaría ser atendido?
+          </legend>
+          <select class="opciones">
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </fieldset>
+
+        <input type="checkbox" id="check1" checked /><label
+          class="label-checkbox"
+          for="check1"
+          >¿Le gustaría recibir novedades de la Barbería Alura?</label
+        >
+        <input type="submit" value="Enviar Formulario" class="enviar" />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Días</th>
+            <th>Rango Horario</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Lunes - viernes</td>
+            <td>8:00hs - 20:00hs</td>
+          </tr>
+
+          <tr>
+            <td>Sábado</td>
+            <td>8:00hs - 13:00hs</td>
+          </tr>
+
+          <tr>
+            <td>Domingo</td>
+            <td>Cerrado</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img src="/imagenes/logo-blanco.png" alt="Logo de la Barbería Alura" />
+      <p class="copyright">&copy Copyright Barberia Alura - 2020</p>
+    </footer>
+  </body>
+</html>
